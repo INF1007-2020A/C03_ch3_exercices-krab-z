@@ -6,16 +6,7 @@ import math
 
 
 def average(a: float, b: float, c: float) -> float:
-    print("Veuillez entrer 3 nombres svp : \n")
-    entrée1 = input()
-    a = int(entrée1)
-    entrée2 = input()
-    b = int(entrée2)
-    entrée3 = input()
-    c = int(entrée3)
     moyenne = (a+b+c)/3
-    print("La moyenne est :")
-
     return moyenne
 
 
