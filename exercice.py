@@ -23,9 +23,10 @@ def to_degrees(angle_rads: float) -> tuple:
     degrees = math.trunc(angle_rads*(180/math.pi))
     minutes = math.trunc((angle_rads*(180/math.pi)-degrees)*60)
     seconds = math.trunc(((angle_rads*(180/math.pi)-degrees)*60 - minutes)*60)
-    convdeg=math.trunc(degrees/360)
+    convdeg = math.trunc(degrees/360)
+    deg_final = degrees-(360*convdeg)
     
-    return degrees-(360*convdeg), minutes, seconds
+    return deg_final, minutes, seconds
 
 
 def to_celsius(temperature: float) -> float:
@@ -33,7 +34,7 @@ def to_celsius(temperature: float) -> float:
 
 
 def to_farenheit(temperature: float) -> float:
-    return temperature*1.8 + 32
+    return (temperature*1.8) + 32
 
 
 def main() -> None:
