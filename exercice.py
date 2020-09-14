@@ -13,9 +13,10 @@ def average(a: float, b: float, c: float) -> float:
     b = int(entrée2)
     entrée3 = input()
     c = int(entrée3)
-    print("La moyenne est de : ", (a+b+c)/3)
+    moyenne = (a+b+c)/3
+    print("La moyenne est :")
 
-    return 0.0
+    return moyenne
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
